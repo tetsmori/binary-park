@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>バイナリパークへようこそ！</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <h1>バイナリパークへようこそ！</h1>
+
+  <h2>パーク入園のルール</h2>
+  <ul>
+	<li>入園する人はまず、2人ペアになってください</li>
+	<li>ペアを組んで1人余ったとき、その人は 1 のゲートに入ることができます</li>
+	<li>ゲートの中の状態は、<strong>次のどちらかを満たしてください</strong>
+		<ul>
+			<li>まったく人がいない</li>
+			<li>ゲートに書かれた数と同じだけの人数がいる</li>
+		</ul>
+	</li>
+  </ul>
+
+
+  <section id="gates" role="region" aria-label="ビットゲート">
+    <div class="gate" data-weight="16">16<div class="bit-label">0</div></div>
+    <div class="gate" data-weight="8"> 8<div class="bit-label">0</div></div>
+    <div class="gate" data-weight="4"> 4<div class="bit-label">0</div></div>
+    <div class="gate" data-weight="2"> 2<div class="bit-label">0</div></div>
+    <div class="gate" data-weight="1"> 1<div class="bit-label">0</div></div>
+  </section>
+
+  <section id="workspace" role="region" aria-label="作業領域">
+    
+  </section>
+
+  <section id="pool" role="region" aria-label="ピクトグラムプール"></section>
+
+  <div id="workspace-count" aria-live="polite">
+    ゲート手前にいるピクト：0 個
+  </div>
+
+  <div id="value-display" aria-live="polite"></div>
+
+  <div id="bit-display" aria-live="polite">00000</div>
+
+  <button id="btn-reset">もう一度やってみる</button>
+
+  <div id="credit">
+	<p>Human icon / <a href="https://thenounproject.com/creator/MauricioBrito/">Mauricio Brito</a></p>
+  </div>
+
+  <script type="module" src="js/app.js" defer></script>
+</body>
+</html>
