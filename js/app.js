@@ -55,7 +55,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 		// 表示リセット
 		bitDisplay.textContent = '00000';
-		workspaceCount.textContent = 'ワークスペース上のピクト：0 個';
+		workspaceCount.textContent = 'ゲート手前にいるピクト：0 個';
 		valueDisplay.textContent = '';
 
 		setupDragAndDrop(refreshDisplays);
