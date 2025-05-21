@@ -35,7 +35,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			const dec = gates.reduce((sum, g) => sum + g.querySelectorAll('.pict').length, 0);
 			const bin = dec.toString(2);
 			valueDisplay.innerHTML =
-				`${dec}<small>（10進数）</small> = ${bin}<small>（2進数）</small>`;
+				`${dec}₍₁₀₎ = ${bin}₍₂₎`;
 		} else {
 			valueDisplay.textContent = '';
 		}
